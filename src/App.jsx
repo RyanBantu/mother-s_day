@@ -22,24 +22,9 @@ export default function App() {
           ease: easeOut,
         }}
       >
-        <motion.span
-          className="site-header__cross"
-          aria-hidden="true"
-          animate={
-            reduceMotion
-              ? { opacity: 0.85 }
-              : {
-                  opacity: [0.75, 1, 0.75],
-                }
-          }
-          transition={{
-            duration: reduceMotion ? 0 : 4,
-            repeat: reduceMotion ? 0 : Infinity,
-            ease: "easeInOut",
-          }}
-        >
+        <span className="site-header__cross" aria-hidden="true">
           ✝
-        </motion.span>
+        </span>
         <p className="site-header__title">Mother&apos;s Day 2026</p>
       </motion.header>
 

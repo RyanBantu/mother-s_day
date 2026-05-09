@@ -50,34 +50,40 @@ export function Hero() {
             ease: [0.65, 0, 0.35, 1],
           }}
         >
-          <motion.img
-            className="hero__image"
-            src="/images/mom-portrait.png"
-            alt="Portrait of Mom standing happily at home, surrounded by plants and warm light"
-            width={1200}
-            height={1600}
-            fetchPriority="high"
-            initial={{ scale: reduceMotion ? 1 : 1.12 }}
-            animate={{ scale: 1 }}
-            transition={{
-              duration: reduceMotion ? 0 : 1.35,
-              ease: easeOut,
-            }}
-          />
+          <div className="hero__photo-slot hero__photo-slot--flowers">
+            <motion.img
+              className="hero__image"
+              src="/images/mom-portrait.png"
+              alt="Mom and son sitting together in a field of blue flowers, smiling"
+              width={1200}
+              height={1200}
+              fetchPriority="high"
+              initial={{ scale: reduceMotion ? 1 : 1.015 }}
+              animate={{ scale: 1 }}
+              transition={{
+                duration: reduceMotion ? 0 : 0.9,
+                ease: easeOut,
+              }}
+            />
+          </div>
+          <div className="hero__photo-slot hero__photo-slot--home">
+            <motion.img
+              className="hero__image hero__image--home"
+              src="/images/mom-home.png"
+              alt="Mom smiling at home by the stairs, with flowers in the foreground"
+              width={1200}
+              height={1600}
+              loading="lazy"
+              initial={{ scale: reduceMotion ? 1 : 1.015 }}
+              animate={{ scale: 1 }}
+              transition={{
+                duration: reduceMotion ? 0 : 0.9,
+                delay: reduceMotion ? 0 : 0.05,
+                ease: easeOut,
+              }}
+            />
+          </div>
         </motion.div>
-        {!reduceMotion && (
-          <motion.div
-            className="hero__shine"
-            aria-hidden="true"
-            initial={{ x: "-120%" }}
-            animate={{ x: "120%" }}
-            transition={{
-              duration: 2.8,
-              delay: 0.4,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-          />
-        )}
       </div>
 
       <div className="hero__content hero__content--animated">
