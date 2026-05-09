@@ -454,6 +454,13 @@ a {
   margin-bottom: 0;
 }
 
+.section__inner .section__signoff {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--navy-soft);
+}
+
 /* Photo strip */
 .photo-strip {
   display: grid;

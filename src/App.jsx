@@ -36,16 +36,31 @@ export default function App() {
             <div className="section__inner">
               <h2>Thank you for raising me in faith</h2>
               <p>
-                You taught me kindness when it would have been easier to walk
-                away, honesty when no one was watching, and humility when pride
-                knocked at the door. Those lessons did not stay in
-                childhood—they became the compass I still use.
+                I&apos;m sorry I haven&apos;t been the son you hoped for. I&apos;ve
+                struggled with anger and bitterness. I can&apos;t change the past,
+                but I&apos;m taking the time I need to become a better person, and
+                I&apos;m grateful that you have always loved me through it.
               </p>
               <p>
-                Because of you, I learned that being a good Christian is not about
-                perfection on display; it is about repentance, grace, and loving
-                others the way we have been loved. I am forever thankful for that
-                gift.
+                You taught me kindness when it would have been easier to walk
+                away, honesty when no one was watching, and humility when pride
+                knocked at the door. Those lessons didn&apos;t stay in
+                childhood&mdash;they became the compass I still follow.
+              </p>
+              <p>
+                Because of you, I learned that being a good Christian isn&apos;t
+                about looking perfect on the outside. It&apos;s about repentance,
+                grace, and loving others the way we have been loved. I am forever
+                grateful for that gift.
+              </p>
+              <p>
+                Someday I hope to heal fully and be the son you&apos;re proud of.
+                Until then, thank you for your faith, your patience, and your love.
+              </p>
+              <p className="section__signoff">
+                Love you,
+                <br />
+                Berry
               </p>
             </div>
           </section>
